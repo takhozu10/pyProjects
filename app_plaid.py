@@ -2,17 +2,17 @@ import requests
 import json
 
 app_info = {
-    'name': 'Takuro Hozumi',
-    'email': 'thozumi.10@gmail.com',
-    'resume': 'https://www.dropbox.com/s/ukmliso3tlrmcbm/Resume_Dec2021v1.pdf?dl=0',
-    'phone': '614-352-1138',
-    'job_id': 'b2d47344-cf07-476d-a16a-7674bcf60cb0',
+    'name': '',
+    'email': '',
+    'resume': '',
+    'phone': '',
+    'job_id': '',
     'github': 'https://github.com/takhozu10',
     'twitter': 'N/A',
     'website': 'N/A',
-    'location': 'Lewis Center, Ohio',
-    'favorite_candy': 'Kit Kat',
-    'superpower': 'FinTech Fan / Credit Card Maestro'
+    'location': '',
+    'favorite_candy': '',
+    'superpower': ''
 }
 json_data = json.dumps(app_info)
 submit = requests.post(url='https://contact.plaid.com/jobs', data=json_data, headers={'Content-type': 'application/json', 'Accept': 'text/plain'})
